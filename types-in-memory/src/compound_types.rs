@@ -22,4 +22,13 @@ fn main() {
     // So this can be defined as an array of machine words.
 
     let a: [i32; 2] = [22, 33, 44];
+
+    // A vector the resizable version of an array, it's size is not fixed so it's values are stored
+    // on the head. The Vec structure is mapped to v, the structure contains 3 machine words that
+    // allow the munipulation of the allocated heap data,
+    // 1. A pointer to the heap data
+    // 2. The capacity of the available memory
+    // 3. the length of the vector (current uniform chunks of memory used)
+
+    let v: Vec<i32> = vec![22, 33, 44];
 }
